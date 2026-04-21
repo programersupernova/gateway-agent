@@ -1,6 +1,6 @@
 // WireGuard public key is base64 32 bytes => usually 44 chars with '=' padding
 export function isValidWgPublicKey(s) {
-  return typeof s === "string" && /^[A-Za-z0-9+/]{42}=?=$/.test(s);
+  return typeof s === "string" && /^[A-Za-z0-9+/]{43}=$/.test(s);
 }
 
 // Only allow x.x.x.x/32 for MVP
