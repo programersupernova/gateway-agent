@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # =============================================================================
-# install-gateway-agent.sh
+# install.sh
 #
 # Cài đặt tự động gateway-agent + WireGuard trên Ubuntu/Debian mới từ đầu.
 # Tested on: Ubuntu 22.04 / 24.04 / 25.10 (sudo-rs), Debian 12.
@@ -8,7 +8,7 @@
 # CÁCH DÙNG (chạy trên server VPN, với root hoặc sudo):
 #
 #   # Cách 1 — CLI flags:
-#   curl -fsSL https://raw.githubusercontent.com/programersupernova/gateway-agent/main/install.sh \
+#   curl -fsSL https://raw.githubusercontent.com/programersupernova/gateway-agent/master/install.sh \
 #     | sudo bash -s -- \
 #         --region UK-LON-1 \
 #         --backend-url https://spn-vpn-api-dev.xfotoai.com \
@@ -18,7 +18,7 @@
 #   sudo REGION=UK-LON-1 \
 #        BACKEND_URL=https://spn-vpn-api-dev.xfotoai.com \
 #        BOOTSTRAP_TOKEN=supersecret-bootstrap-token \
-#        bash install-gateway-agent.sh
+#        bash install.sh
 #
 # Script idempotent: chạy lại được để cập nhật (giữ nguyên keys + AGENT_TOKEN).
 # =============================================================================
